@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="shortcut icon" href="./../bootstrap/icons/icons/bootstrap-fill.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap4.0.0.css">
+    <script src="./Bootstrap4.4.1.js"></script>
+    <script src="./Bootstrap4.4.1.pooper.js"></script>
+    <script src="./jquery3.4.1.js"></script>
+</head>
+<body class=" bg-dark  text-white">
+    <div class="container">
+        <div class="w-75 m-0 m-auto">
+    <form action="" class="my-5">
+        <div class="row mb-3">
+            <div class="col-md-6 mb-3">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required class="form-control">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required class="form-control">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required class="form-control">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" required class="form-control">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-5">
+                <label for="country">Country:</label>
+                <select name="country" id="country" class="d-block w-100 custom-select">
+                    <option value="">Choose...</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="state">State:</label>
+                <select name="state" id="state" class="d-block w-100 custom-select">
+                    <option value="">Choose...</option>
+                    <option value="pv-1">provienc-1</option>
+                    <option value="pv-2">provienc-2</option>
+                    <option value="pv-3">provienc-3</option>
+                    <option value="pv-4">provienc-4</option>
+                    <option value="pv-5">provienc-5</option>
+                    <option value="pv-6">provienc-6</option>
+
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="zip">Zip code:</label>
+                <input type="text" name="zipcode" id="zip" class="form-control">
+            </div>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="" class="custom-control-input" id="same-info">
+            <label for="same-info" class="custom-control-label">Shipping address is the same as billing address.</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="" id="save-info" class="custom-control-input">
+            <label for="save-info" class="custom-control-label">save my information</label>
+        </div>
+        <h3 class="my-3">
+            Payment
+        </h3>
+        <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+                <input type="radio" name="paymentMethod" class="custom-control-input" id="creditcard">
+                <label for="creditcard" class="custom-control-label">Credit Card</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" name="paymentMethod" id="debitcard" class="custom-control-input">
+                <label for="debitcard" class="custom-control-label">Debit Card</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" name="paymentMethod" id="mastercard" class="custom-control-input">
+                <label for="mastercard" class="custom-control-label">Master Card</label>
+            </div>
+            
+        </div>
+        <div class="row my-3">
+            <div class="col-md-6">
+                <label for="cardholder">Name of cardholer:</label>
+                <input type="text" class="form-control" name="cardholder" id="cardholer">
+            </div>
+            <div class="col-md-6">
+                <label for="cardnumber">Card Number:</label>
+                <input type="text" name="cardnumber" id="cardnumber" class="form-control">
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-3">
+                <label for="expiredate">Expiration</label>
+                <input type="text" name="expiredate" id="expiredate" class="form-control">
+            </div>
+            <div class="col-md-3">
+                <label for="securitycode">Security Code</label>
+                <input type="text" name="securitycode" id="securitycode" class="form-control">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+    </form>
+</div>
+</div>
+</body>
+</html>
