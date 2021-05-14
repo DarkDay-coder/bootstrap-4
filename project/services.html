@@ -10,6 +10,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #serviceImg{
+            height:800px; 
+            width: 800px;
+        }
+        @media screen and (max-width:992px){
+            #serviceImg{
+                height:100vh; 
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -35,7 +47,7 @@
         </div>
     </nav>
     <div class="container text-center mt-2">
-        <p><img src="./IMG_20210504_124240.jpg" style="height:800px; width: 800px;" alt=""></p>
+        <p><img id="serviceImg" src="./IMG_20210504_124240.jpg"  alt=""></p>
     </div>
     <div class="container my-1 bg-dark">
         <div class="row py-3">
